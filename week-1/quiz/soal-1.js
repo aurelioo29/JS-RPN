@@ -4,16 +4,15 @@
 // Jika kedua angka bernilai sama, function akan me-return -1.
 
 function bandingkanAngka(angka1, angka2) {
-  let hasil = "";
+  // let hasil = "";
 
   if (angka1 === angka2) {
-    hasil = -1;
+    return -1;
   } else if (angka2 > angka1) {
-    hasil = true;
+    return true;
   } else {
-    hasil = false;
+    return false;
   }
-  return hasil;
 }
 
 // TEST CASES

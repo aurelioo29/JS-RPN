@@ -11,7 +11,19 @@ note kenapa angka 343 adalah palindrome? karena angka 343 dibalik tetep 343 eaaa
 */
 
 function angkaPalindrome(num) {
-  // you can only write your code here!
+  let start = num + 1;
+  while (true) {
+    let str = start.toString();
+    let balik = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+      balik += str[i];
+    }
+
+    if (balik === str) {
+      return str;
+    }
+    start++;
+  }
 }
 
 // TEST CASES

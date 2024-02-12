@@ -1,8 +1,7 @@
-// algoritma nya
-// mengubah tipe jenis data menjadi String
-// melakukan split terhadap data dari isi variabel convert
-// membuat variabel big dengan nilai 0
-//
+// let angka = 12455;
+// let convert = angka.toString();
+// let split = convert.split("");
+// console.log(split);
 
 function pasanganTerbesar(num) {
   let convert = num.toString();

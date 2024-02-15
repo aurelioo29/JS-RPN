@@ -11,3 +11,7 @@ console.log(angka);
 // Kebawah itu floor
 let hasil = Math.floor(10.5898);
 console.log(hasil);
+
+// Termasuk posifif itu abs
+let positif = Math.abs(-58);
+console.log(positif);

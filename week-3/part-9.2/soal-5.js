@@ -2,6 +2,15 @@
 //intinya ubah huruf menjadi huruf setelahnya
 function ubahHuruf(kata) {
   // you can only write your code here!
+  let result = "";
+  for (let i = 0; i < kata.length; i++) {
+    if (kata[i] === "z") {
+      result += "a";
+    } else {
+      result += String.fromCharCode(kata[i].charCodeAt() + 1);
+    }
+  }
+  return result;
 }
 
 // TEST CASES

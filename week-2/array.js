@@ -72,3 +72,70 @@ for (let i = 0; i < cekDimensi.length; i++) {
     }
   }
 }
+
+var name = [
+  "Andi",
+  "Budi",
+  "Caca",
+  "Dedi",
+  // "Euis",
+  // "Fafa",
+  // "Gaga",
+  // "Hani",
+  // "Ika",
+  // "Joko",
+];
+for (let i = 0; i < name.length; i++) {
+  console.log(name[i]);
+}
+
+console.log(name.join(" - ")); // gabung menjadi string
+name.push("Euis"); // menambahkan data di akhir data array
+console.log(name);
+name.pop(); // menghapus data di akhir data array
+console.log(name);
+name.unshift("Euis"); // menambahkan data di awal data array
+console.log(name);
+name.shift(); // menghapus data di awal data array
+console.log(name);
+
+// splice(indexAwal, mauDihapusBerapa, elemen1, el2men2)
+// artinya index keberapa yang mau di tambah / di hapus
+name.splice(1, 2, "Aurelio");
+console.log(name);
+
+// slice(awal, akhir)
+// artinya yang mana aja mau di tampilkan
+var arr = name.slice(1, 3);
+console.log(arr);
+
+// -----------------------------------------
+// function expression
+var angka = [1, 2, 4, 5, 3, 6, 10, 7];
+angka.forEach(function (i) {
+  console.log(i);
+});
+
+// function map
+let ob = angka.map(function (i) {
+  return i * 2;
+});
+console.log(ob);
+
+// sorting
+angka.sort(function (a, b) {
+  return a - b;
+});
+console.log(angka);
+
+// filter
+let saring = angka.filter(function (x) {
+  return x < 5;
+});
+console.log(saring);
+
+// find
+let jumpa = angka.find(function (x) {
+  return x < 5;
+});
+console.log(jumpa);
